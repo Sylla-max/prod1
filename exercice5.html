@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body{
+      background: url("images/2017-10-06-16-00-58.jpg") fixed center/cover;
+      color: white;
+      font-family:Georgia, 'Times New Roman', Times, serif ;
+       padding-bottom: 60px;
+       justify-content: center;
+  
+    }
+
+    h1{
+     margin-top: 70px;
+     text-align: center;
+     font-weight: 800;
+    }
+
+    .div1{
+      text-align: center;
+    }
+
+    .div2{
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .btn{
+      background-color: burlywood;
+      margin-right: 1rem;
+      margin-left: 1rem;
+      border-radius: 15px;
+       transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .btn:hover{
+      background-color: burlywood;
+      transform: translateY(-2px);
+    }
+
+    a{
+      color: white;
+    }
+
+    .sp4{
+      text-align: center;
+      justify-content: center;
+      margin-top: 20px;
+      display: flex;
+    }
+
+    .card{
+      height: 150px;
+      width: 150px;
+      background-color: burlywood;
+      color: white;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover{
+      transform: scale(1.05);
+    }
+
+    .container{
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    i{
+      color: white;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    a{
+      margin-left: 4px;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px 0;
+      text-align: center;
+      backdrop-filter: blur(5px);
+      font-size: 0.9rem;
+    }
+ 
+    @media (max-width:768px) {
+      .container{
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2,150px);
+        justify-content: center;
+        align-content: center;
+        gap: 20px;
+        margin-top: 10px;
+        
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Ou puis-je Camper?</h1>
+
+  <div class="div1">
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam explicabo vel aspernaturrem sint ad. </span> <br>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
+  </div>
+
+  <div class="div2">
+    <button type="button" class="btn">Pourquoi Camper?</button>
+    <button type="button" class="btn">Comment Camper</button>
+  </div>
+
+  <span class="sp4">Image de<a href=""> freepik</a></span>
+  
+  <div class="container">
+    <div class="card">
+      <i class="fas fa-hiking fa-4x"></i>
+      <span style="margin-top: 15px;">RANDONEE</span>
+    </div>
+
+    <div class="card">
+    <i class="fas fa-campground fa-4x"></i>
+      <span style="margin-top: 15px;">CAMPING</span>
+    </div>
+
+    <div class="card">
+    <i class="fas fa-umbrella-beach fa-4x"></i>
+    <span style="margin-top: 15px;">TENTE DE PLAGE</span>
+    </div>
+
+    <div class="card">
+    <i class="fas fa-fire fa-4x"></i>
+    <span>SOIREE AU COIN DU FEU</span>
+    </div>
+  </div>
+
+<footer class="bg-tranparent fixed-bottom">
+  <span>Réalisé par Ousman Sylla</span>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
